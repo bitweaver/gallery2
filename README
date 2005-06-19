@@ -1,0 +1,18 @@
+You do not have the code for Gallery2. The easiest way to get the code is to use CVS.
+Before you do - please rename the index.php file in the Galley2 directory.
+
+cvs -d:pserver:anonymous@cvs.sf.net:/cvsroot/gallery co gallery2
+
+You could also visit http://gallery.sourceforge.net and download the lastest
+stable release (minimum Alpha 4)
+
+After Gallery2 is installed
+1. Delete their index.php file and replace it with ours. During installation - you will be warned that this file is not the original.
+2. Delete their /templates/sidebar.tpl and replace it with ours.
+
+A few key Gallery2 installation tips:
+
+# Be sure to include "User Albums" module when installing.
+# Once installed, log in to gallery2 directly and click "Site Admin". Click the
+  "User Albums" link and change "Create albums" to "When user is first created".
+  Click "Save"
