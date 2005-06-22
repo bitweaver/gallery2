@@ -1,5 +1,5 @@
-You do not have the code for Gallery2. The easiest way to get the code is to use CVS.
-Before you do - please rename the index.php file in the Galley2 directory.
+This folder contains the framework to add gallery2 to bitweaver, but does not contain
+the actual gallery2 source code. The easiest way to get the code is to use CVS.
 
 cvs -d:pserver:anonymous@cvs.sf.net:/cvsroot/gallery co gallery2
 
