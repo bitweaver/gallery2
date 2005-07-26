@@ -45,14 +45,14 @@
 		GalleryCapabilities::set('showSidebar', TRUE);
 		$g2data = GalleryEmbed::handleRequest();
 		//After enabling sidebar, no need to smarty menu and it is not working as of 2005 06 17
-		//$smarty->assign_by_ref( 'menuLinks', $g2data['layoutData']['itemLinks'] );
+		//$gBitSmarty->assign_by_ref( 'menuLinks', $g2data['layoutData']['itemLinks'] );
 
 		if ($g2data['isDone']) {
 			exit; // G2 has already sent output (redirect or binary data)
 		}
 	$GLOBALS['ADODB_FETCH_MODE'] = ADODB_FETCH_ASSOC;
 
-		$smarty->assign_by_ref( 'g2data', $g2data );
+		$gBitSmarty->assign_by_ref( 'g2data', $g2data );
 		$gBitSystem->display( 'bitpackage:gallery2/bitweaver_embed.tpl' );  
 	}
 ?>
