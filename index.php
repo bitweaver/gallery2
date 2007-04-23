@@ -36,7 +36,7 @@
 	//'hashedpassword' => string,
 	//'hashmethod' => string,
 				} else {
-					fatalError( $status->getAsHtml() );
+					fatalError( tra( $status->getAsHtml() ));
 					exit;
 				}
 			}
