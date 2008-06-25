@@ -53,6 +53,6 @@
 	$GLOBALS['ADODB_FETCH_MODE'] = ADODB_FETCH_ASSOC;
 
 		$gBitSmarty->assign_by_ref( 'g2data', $g2data );
-		$gBitSystem->display( 'bitpackage:gallery2/bitweaver_embed.tpl' );  
+		$gBitSystem->display( 'bitpackage:gallery2/bitweaver_embed.tpl' , NULL, array( 'display_mode' => 'display' ));  
 	}
 ?>
