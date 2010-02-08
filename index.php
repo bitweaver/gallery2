@@ -1,6 +1,6 @@
 <?php
 
-	require_once( '../bit_setup_inc.php' );
+	require_once( '../kernel/setup_inc.php' );
 
 	if (!file_exists( 'embed.php' )) {
 		$lines = file( "README." );
